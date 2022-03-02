@@ -5,7 +5,7 @@
 #File:       ssh_keygen.py
 #Date:       2022FEB02
 #Author:     William Blair
-#Contact:	   williamblair333@gmail.com
+#Contact:	 williamblair333@gmail.com
 #Tested on:  Debian 11, Windows 10 21H1
 #
 #This script intends to do the following:
