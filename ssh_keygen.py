@@ -13,7 +13,8 @@
 #- Generate ssh public and private keys compatible with Linux and hopefully
 #- other operating systems
 #- TODO
-#- Make a function out of it for custom file names, paths, and whatnot
+#- Make a function out of it for custom key type, strengths,
+#- file names, paths, and whatnot
 ################################################################################
 
 '''
