@@ -51,7 +51,7 @@ parser.add_argument('-k', '--keyname',   type=str, nargs='?', const="id_rsa", \
 help='Private key name. Default name is id_rsa.', required=False)
 
 parser.add_argument('-p', '--keypath',   type=str, nargs='?', const=path_ssh, \
-help='Private and public key folder path location.  Default path is ${HOME}/.ssh.', \
+help='Private and public key folder path location.  Default path is $HOME/.ssh.', \
 required=False)
 
 args = parser.parse_args()
@@ -69,7 +69,7 @@ os_windows = "Windows"
 if os_windows in os_type:
     print("This is windows")
     parser.add_argument('-p', '--keypath', type=str, nargs='?', const="%USERPROFILE%\.ssh", \
-    help='Private and public key folder path location.  Default path is ${HOME}/.ssh.', \
+    help='Private and public key folder path location.  Default path is $HOME/.ssh.', \
     required=False)
 else:
     print("This is...")
