@@ -43,10 +43,13 @@ path_ssh = dir_home + "/" + dir_ssh
 #Setting up arguments and defaults
 parser = argparse.ArgumentParser(description='To set ssh key bit size, name ' + \
 'and path location.')
+
 parser.add_argument('-b', '--bits', type=str, nargs='?', const="2048", \
 help='SSH key bit strength. Default is 2048.', required=False)
+
 parser.add_argument('-k', '--keyname',   type=str, nargs='?', const="id_rsa", \
 help='Private key name. Default name is id_rsa.', required=False)
+
 parser.add_argument('-p', '--keypath',   type=str, nargs='?', const=path_ssh, \
 help='Private and public key folder path location.  Default path is ${HOME}/.ssh.', \
 required=False)
