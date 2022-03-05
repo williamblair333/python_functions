@@ -9,5 +9,3 @@ def folder_create(path_ssh, dir_ssh, dir_home):
         os.mkdir(dir_ssh)
         print(f'Folder "{dir_ssh}" succesfully created!')
         return
-
-
