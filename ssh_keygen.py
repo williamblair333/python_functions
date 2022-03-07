@@ -84,7 +84,6 @@ if not os.path.exists(keypath):
     os.makedirs(keypath)
 else:
     os.chdir(keypath)
-
 #################################################################################
 
 #start private & public key generation
