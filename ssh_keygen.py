@@ -35,6 +35,7 @@ from os import chmod
 
 #OS handling will go here.. function coming?
 os_type =  platform.platform()
+os_ver = platform.version()
 os_linux = "Linux"
 os_windows = "Windows"
 
