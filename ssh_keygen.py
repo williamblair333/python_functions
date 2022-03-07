@@ -24,7 +24,6 @@ python3 -m pip uninstall pycrypto
 python3 -m pip install pycryptodome
 '''
 #################################################################################
-import lib_folder as dir
 import lib_keygen as ssh
 import argparse, csv, os, platform, sys, time
 from subprocess import call
