@@ -7,7 +7,7 @@
 #Date:       2022FEB02, updated 2022MAR07
 #Author:     William Blair
 #Contact:	 williamblair333@gmail.com
-#Tested on:  Debian 11
+#Tested on:  Debian 11, Windows 10 21H2,
 #
 #This script intends to do the following:
 #
@@ -37,6 +37,7 @@ from os import chmod
 os_type =  platform.platform()
 os_linux = "Linux"
 os_windows = "Windows"
+
 #################################################################################
 
 #Setting for variables for default arguments
