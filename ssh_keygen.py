@@ -21,6 +21,11 @@ Old crypto libraries will cause problems. Run this..
 python3 -m pip uninstall crypto 
 python3 -m pip uninstall pycrypto 
 python3 -m pip install pycryptodome
+
+import lib_pkg_handler as pkg
+#check for required packages and install them
+pkg_required = {'argparse', 'os', 'platform', 'Crypto.PublicKey', 'pathlib'}
+pkg.pkg_check(pkg_required)
 '''
 #################################################################################
 
