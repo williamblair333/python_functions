@@ -81,7 +81,10 @@ keypath = (args.keypath)
 #################################################################################
 
 if not os.path.exists(keypath):
-    os.makedirs(keypath)
+    try:
+        os.makedirs(keypath)
+    except PermissionError:
+        print("Permission denied creating a folder here, exiting.")
 else:
     os.chdir(keypath)
 #################################################################################
