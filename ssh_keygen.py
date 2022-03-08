@@ -30,19 +30,19 @@ from Crypto.PublicKey import RSA
 from pathlib import Path
 #################################################################################
 
-#OS handling will go here.. function coming?
+#OS handling
 os_type =  platform.platform()
 os_ver = platform.version()
 os_linux = "Linux"
 os_windows = "Windows"
 #################################################################################
 
-#Setting for variables for default arguments
+#Set variables for default arguments
 dir_home = str(Path.home())
 dir_ssh = ".ssh"
 #################################################################################
 
-#Setting up arguments and defaults
+#Set arguments and defaults
 #Notes:  
 #    default is the value that the attribute gets when the argument is absent. 
 #    const is the value it gets when given. 
