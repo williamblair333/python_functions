@@ -1,4 +1,4 @@
-################################################################################
+#################################################################################
 #
 #READ THE COMMENTS BEFORE RUNNING
 #Run:        python3 ssh_keygen.py -b 4096 -k my_id_rsa -p /home/user/.ssh
@@ -15,8 +15,7 @@
 #- other operating systems.
 #- TODO
 #- Error handling..
-################################################################################
-
+#################################################################################
 '''
 Old crypto libraries will cause problems. Run this..
 python3 -m pip uninstall crypto 
@@ -24,6 +23,7 @@ python3 -m pip uninstall pycrypto
 python3 -m pip install pycryptodome
 '''
 #################################################################################
+
 import lib_keygen as ssh
 import argparse, csv, os, platform, sys, time
 from subprocess import call
@@ -93,3 +93,4 @@ if os.path.exists(keyname):
 
 cipher = RSA.generate(int(bits))
 ssh.key_generate(cipher, keyname, keypath)
+#################################################################################
