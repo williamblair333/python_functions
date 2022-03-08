@@ -25,12 +25,9 @@ python3 -m pip install pycryptodome
 #################################################################################
 
 import lib_keygen as ssh
-#import argparse, csv, os, platform, sys, time
 import argparse, os, platform
-#from subprocess import call
 from Crypto.PublicKey import RSA
 from pathlib import Path
-#from os import chmod
 #################################################################################
 
 #OS handling will go here.. function coming?
