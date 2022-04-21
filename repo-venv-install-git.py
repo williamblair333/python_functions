@@ -9,7 +9,7 @@
 #Tested on: Debian 11 && Windows 10 21H2
 #
 #This script is intended to do the following:
-#-Automatically a git repo and setup a .venv under home directory
+#-Automatically download a git repo and setup a .venv under home directory
 #-TODO args to: specify venv folder location, repo
 #-TODO function to make get clone or venv setup optional
 #-TODO cleanup and 'professionalize'
