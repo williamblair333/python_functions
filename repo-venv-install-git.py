@@ -25,17 +25,17 @@ import sys
 dir_home = str(Path.home())
 os_type =  platform.platform()
 os_ver = platform.version()
-os_linux = "Linux"
-os_windows = "Windows"
+os_linux = 'Linux'
+os_windows = 'Windows'
 #################################################################################
 
-git_server = "192.168.1.10"
+git_server = '192.168.1.10'
 repo_get = 'git clone https://' + git_server + ':/user/repo.git'
 #################################################################################
 
 py_ver_long = sys.version
 py_ver_num = py_ver_long.split()
-py_ver_num = "python" + py_ver_num[0][0:3]
+py_ver_num = 'python' + py_ver_num[0][0:3]
 #py_ver_num = py_ver_num[0]
 #################################################################################
 
@@ -43,8 +43,8 @@ py_ver_num = "python" + py_ver_num[0][0:3]
 pip_pipenv_install = 'pip install pipenv'
 pip_upgrade_user = 'pip install --upgrade --user pip'
 pip_upgrade_system = 'pip install --upgrade pip'
-pip_packages = "curl -o requirements.txt http://" + git_server + \
-    ":user/repo/raw/branch/main/requirements.txt"
+pip_packages = 'curl -o requirements.txt http://' + git_server + \
+    ':user/repo/raw/branch/main/requirements.txt'
 
 venv_home = '.venv'
 pipenv_setup = 'mkdir ' + venv_home + '&& cd .venv'
@@ -70,15 +70,15 @@ if os_linux in os_type:
 
     #run all the commands together in one sub-process
     os.system(('cd "$HOME"; ') + \
-              set_py_path + "; " + \
-              set_web_path + "; " + \
-              set_bin_path + "; " + \
-              pip_pipenv_install + "; " + \
-              pip_upgrade_user + "; " + \
-              pip_upgrade_system + "; " + \
-              pip_packages + "; " + \
-              pipenv_setup + "; " + \
-              pipenv_installer + "; " + \
+              set_py_path + '; ' + \
+              set_web_path + '; ' + \
+              set_bin_path + '; ' + \
+              pip_pipenv_install + '; ' + \
+              pip_upgrade_user + '; ' + \
+              pip_upgrade_system + '; ' + \
+              pip_packages + '; ' + \
+              pipenv_setup + '; ' + \
+              pipenv_installer + '; ' + \
               py_utils)
 
     webdriver_install()
@@ -90,13 +90,13 @@ if os_windows in os_type:
     os.system(repo_get)
 
     #run all the commands together in one sub-process
-    os.system(('cd %USERPROFILE% ') + " & " + \
-              'python3 -m ' + pip_pipenv_install + " & " + \
-              'python3 -m ' + pip_upgrade_user + " & " + \
-              'python3 -m ' + pip_upgrade_system + " & " + \
-              'python3 -m ' + pip_packages + " & " + \
-              pipenv_setup + " & " + \
-              'python3 -m ' + pipenv_installer + " & " + \
+    os.system(('cd %USERPROFILE% ') + ' & ' + \
+              'python3 -m ' + pip_pipenv_install + ' & ' + \
+              'python3 -m ' + pip_upgrade_user + ' & ' + \
+              'python3 -m ' + pip_upgrade_system + ' & ' + \
+              'python3 -m ' + pip_packages + ' & ' + \
+              pipenv_setup + ' & ' + \
+              'python3 -m ' + pipenv_installer + ' & ' + \
               py_utils)
 
     webdriver_install()
